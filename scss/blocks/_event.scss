@@ -1,0 +1,59 @@
+.event{
+    background-image: url(../images/subscrip-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50%) calc(50% - 25px);
+}
+.event__into{
+    padding-top: 255px;
+    padding-bottom: 300px;
+    padding-left: 180px;
+}
+.event__title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.event__form{
+    display: flex;
+}
+.event__label {
+    margin-right: 21px;
+}
+.event__input {
+    width: 355px;
+    padding: 18px 0px 12px 22px;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    border: 2px solid transparent;
+    &:focus {
+        border: 2px solid #FFBD54;
+    }
+}
+.event__button {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 3px;
+    padding: 15px 52px;
+    cursor: pointer;
+    border: none;
+    transition: all .5s;
+    &:hover {
+        color: #333333;
+        background-color: #FFBD54;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,226 @@
+.header-top{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+.address.header-top__address{
+  margin-right: 130px;
+}
+
+.address__link{
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+  z-index: 1;
+  transition: all .5s;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: -21px;
+    top: 1px;
+    background: url('../images/house.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+    background-position: right center;
+  }
+  &:hover{
+    color: #FFBD54;
+  }
+  &:active{
+    color: #333333;
+    opacity: 0.6;
+  }
+}
+.header-top__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 120px;
+  list-style: none;
+}
+.header-top__link{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  transition: all .5s;
+  &:hover{
+    color: #FFBD54;
+  }
+  &:active{
+    color: #333333;
+    opacity: 0.6;
+  }
+}
+.header-top__item{
+  position: relative;
+  z-index: 1;
+}
+.header-top__item:nth-child(1){
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: -21px;
+    background: url('../images/phone.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+    background-position: right center;
+  }
+}
+.header-top__item:nth-child(2){
+  padding-left: 22px;
+  padding-right: 22px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 9px;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    background-color: #FFBD54;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    right: 10px;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    background-color: #FFBD54;
+  }
+}
+.headerr-top__data{
+  display: flex;
+  align-items: center;
+}
+.header-top__time{
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+  z-index: 1;
+}
+.time-b{
+  font-weight: 700;
+}
+.header-top__time:nth-child(1){
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: -21px;
+    background: url('../images/data-time.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-position: right center;
+  }
+}
+.header-top__time:nth-child(2){
+  padding-left: 17px;
+}
+.header-bottom{
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+}
+.header-bottom__inside{
+  display: flex;
+  justify-content: end;
+}
+.header-bottom__site-link{
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 660px);
+  top: calc(50% - 45px);
+  transition: all .5s;
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.header-bottom__list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 198px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -2px;
+    left: -30px;
+    background: url('../images/active.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: right center;
+  }
+}
+.header-bottom__item + .header-bottom__item{
+  margin-left: 55px;
+}
+.header-bottom__link{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333; 
+  border-bottom: 2px solid transparent;
+  transition: all .5s;
+  &:hover{
+    border-bottom: 4px solid #f4ffad;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.header-bottom__question-link{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  transition: all .5s;
+  position: relative;
+  border-bottom: 4px solid transparent;
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -2px;
+    left: -30px;
+    background: url('../images/pet.svg');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: right center;
+  }
+  &:hover{
+    border-bottom: 4px solid #f4ffad;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,74 @@
+.comment__box {
+    padding-top: 45px;
+    padding-bottom: 90px;
+}
+.comment__inner{
+    margin: 0px auto;
+    width: 755px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/blockquote-line.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 140px;
+        height: 2px;
+        left: 320px;
+        top: -45px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/blockquote-line.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 140px;
+        height: 2px;
+        left: 320px;
+        top: 110px;
+    }
+}
+.comment__blockquote{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #949494;
+    margin: 0px;
+    margin-bottom: 70px;  
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/open.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 42px;
+        left: -100px;
+        top: -25px;
+    } 
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url(../images/close.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 42px;
+        right: -100px;
+        bottom: 90px;
+    }
+}
+.comment__text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+}
